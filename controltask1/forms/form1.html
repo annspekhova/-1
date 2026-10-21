@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Формы. Отправляем данные на сервер</title>
+</head>
+
+<body>
+    <h2 align="left">Форма 1. Контактные данные</h2>
+    <form action="https://www.bing.com/search?" id="form1" name="UserEnter" target="_blank">       
+        <p>Для поисковика:<input name="q" value="search"></p>
+        <p>Фамилия: <input type="text" name="last_name" size=20 value="Петров"></p>
+        <p>Имя: <input type="text" name="name" size=20 value="Виктор"></p>
+        <p>Учебная группа: <input type="text" name="group" size="20" value="ИЯ-23-1"></p>
+        <p>Мобильный телефон: <input type="tel" name="phone" pattern="7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" value="7 (950) 891-30-03" required> </p>
+        <p>Электронная почта: <input type="text" name="email" size="30" value="student@hse.edu.ru"> </p>
+        <p>Дата отправки: <input type="date" name="user_date" value="2026-10-21"></p>
+        <p>
+            <input type="reset" name="reset1" value="Обновить">
+            <input type="submit" name="submit1" value="Отправить">
+        </p>
+    </form>
+
+
+    <h2 align="left">Форма 2. Оформление заказа</h2>
+    <form action="https://www.bing.com/search?" id="form2" name="UserEnter" target="_blank">
+        <p>Для поисковика:<input name="q" value="search"></p>
+
+        <p>Вид гитары:
+            <select name="guitar">
+                <option value="classical">Классическая</option>
+                <option value="acoustic">Акустическая</option>
+                <option value="electric">Электрогитара</option>
+                <option value="acoustic-electric">Электроакустика</option>
+                <option value="semi-acoustic">Полуакустика</option>
+            </select>
+        </p>
+
+        <p>Название гитары:
+            <input type="text" name="guitar_name" size="30" value="Cort AC200-NAT">
+        </p>
+
+
+        <p>Комбоусилитель:
+            <input type="radio" name="amp"> Нужен
+            <input type="radio" name="amp" checked> Не нужен
+        </p>
+
+
+        <p>Материал струн:
+            <select name="strings">
+               <option value="nylon">Нейлон (рекомендуем для классических гитар)</option>
+               <option value="bronze">Бронза</option>
+               <option value="ph_bronze">Фосфорная бронза</option>
+               <option value="nikel">Никель</option>
+               <option value="steel">Нержавеющая сталь</option>
+            </select>
+        </p>
+
+        <p>Количество комплектов струн:
+            <input type="number" min="1" name="quantity" size="10" value="2">
+        </p>
+
+        <p>Гитарные аксессуары:
+            <input type="checkbox" name="pick" checked>Медиатор
+            <input type="checkbox" name="capo">Каподастр
+            <input type="checkbox" name="belt" checked>Ремень для гитары
+            <input type="checkbox" name="case">Кейс для гитары    
+        </p>
+
+        <p>Дополнительные услуги:
+            <input type="checkbox" name="tune" checked>Настройка гитары
+            <input type="checkbox" name="strings">Замена струн
+            <input type="checkbox" name="frets">Замена ладов
+            <input type="checkbox" name="bridges">Замена порожков
+            <input type="checkbox" name="pickups">Установка звукоснимателей
+            <input type="checkbox" name="delivery">Доставка курьером (напишите адрес доставки в комментариях)
+        </p>
+
+        <p>Пароль от личного кабинета:
+            <input type="password" name="password" size="6" value="167671">
+        </p>
+
+        <p>Когда планируете получить заказ:
+            <input type="date" name="user_date" value="2026-11-10">
+        </p>
+
+        <p>Ваши комментарии и пожелания:
+            <br>
+            <textarea cols="80" rows=4 name="textarea">Пишите здесь</textarea>
+        </p>
+
+        <p>
+            <input type="reset" name="reset2" value="Обновить">
+            <input type="submit" name="submit2" value="Отправить">
+        </p>
+    </form>
+
+</body>
+
+</html>
